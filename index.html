@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-web</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+ 
 </head>
 <body-------------ABOUT----------->
     <div id="header">
@@ -34,17 +36,30 @@
                     <img src="img/images.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, odit praesentium sit perferendis facere doloremque fugit quae facilis, possimus voluptatum, excepturi molestias non laudantium animi. Vitae non quos amet saepe!</p>
+                    <h1 class="sub-title">About We</h1><br>
+                    <p></p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span></li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li> 
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Developement</span><br>Building Android and IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul> 
+                            <li><span>2021-2024</span><br>Freelancer</li>
+                            <li><span>App Developement</span><br>Building Android and IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Constant Learning</span><br>Training at Freecodecamp, RollingCodeAcademy, SoyHenry, GoogleActivate, Udemy</li> 
                         </ul>
                     </div>
 
@@ -52,6 +67,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        
+    </script>
+    
     
 </body>
 </html>
