@@ -27,3 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var sidemenu = document.getElementById("sidemenu");
+  
+    function openmenu() {
+      sidemenu.style.right = "0";
+      document.querySelector(".fa-bars").style.display = "none";
+      document.querySelector(".fa-xmark").style.display = "block";
+    }
+  
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+      document.querySelector(".fa-bars").style.display = "block";
+      document.querySelector(".fa-xmark").style.display = "none";
+    }
+  
+    window.openmenu = openmenu;
+    window.closemenu = closemenu;
+  });
+  
+  
+  
